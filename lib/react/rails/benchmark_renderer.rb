@@ -1,7 +1,8 @@
+# Dependencies
 require "active_support"
 require "react-rails"
-require "react/server_rendering/exec_js_renderer"
-require "react/server_rendering/sprockets_renderer"
+
+# This library
 require "react/rails/benchmark_renderer/version"
 require "react/server_rendering/concerns/instrumentation"
 require "react/server_rendering/benchmark_renderer"

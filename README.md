@@ -1,9 +1,15 @@
 # React::Rails::BenchmarkRenderer
 
-This idea started with a PR I sent to actual react-rails before it hit 1.0 release.  I didn't have time to finish it then,
-and the structure of the react-rails codebase changed considerably, so it is now quite easy to write a renderer as a plugin.
+This idea started with [a PR I sent](https://github.com/reactjs/react-rails/pull/101/files) to [actual react-rails](https://github.com/reactjs/react-rails) before it hit 1.0 release.  I didn't have time to finish it then, and the structure of the react-rails codebase has changed considerably in latest master, so it is now 
+quite easy to write a renderer as a plugin.  Rewriting it as a modular plugin also allowed me to
+  * Not be beholden to the Apache 2 license on react-rails
+  * Not be beholden to the Facebook CLA
+  * Own the code myself!
+  * Kudos to Facebook for making react-rails more modular so I could easily write this plugin!
 
-This gem is a plugin to ract-rails providing two things:
+NOTE: This gem requires the unreleased master branch of react-rails.  As such this gem may require some finesse.
+
+This gem is a plugin to react-rails providing two things:
 
 1. `React::ServerRendering::Concern::Instrumentation`
   - benchmarking instrumentation of the sort found in rails view rendering
