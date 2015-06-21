@@ -4,9 +4,8 @@ module React
       module Instrumentation
         extend ActiveSupport::Concern
 
-        attr_internal :view_runtime
-
         included do
+          attr_reader :view_runtime
           prepend RenderWithBenchmark
         end
 
