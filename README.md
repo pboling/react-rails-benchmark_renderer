@@ -84,7 +84,7 @@ dependency on this gem using the [Pessimistic Version Constraint](http://docs.ru
 
 For example:
 
-    spec.add_dependency 'destination_errors', '~> 0.0'
+    spec.add_dependency 'react-rails-benchmark_renderer', '~> 0.0'
 
 ## Contributing
 
