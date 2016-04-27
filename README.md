@@ -1,14 +1,5 @@
 # React::Rails::BenchmarkRenderer
 
-This idea started with [a PR I sent](https://github.com/reactjs/react-rails/pull/101/files) to [actual react-rails](https://github.com/reactjs/react-rails) before it hit 1.0 release.  I didn't have time to finish it then, and the structure of the react-rails codebase has changed considerably in latest master, so it is now 
-quite easy to write a renderer as a plugin.  Rewriting it as a modular plugin also allowed me to
-  * Not be beholden to the Apache 2 license on react-rails
-  * Not be beholden to the Facebook CLA
-  * Own the code myself!
-  * Kudos to Facebook for making react-rails more modular so I could easily write this plugin!
-
-NOTE: This gem requires the unreleased master branch of react-rails.  As such this gem may require some finesse.
-
 This gem is a plugin to react-rails providing two things:
 
 1. `React::ServerRendering::Concern::Instrumentation`
@@ -16,6 +7,40 @@ This gem is a plugin to react-rails providing two things:
   - can be included into any Renderer to add Benchmarking to it
 2. `React::ServerRendering::BenchmarkRenderer`
   - a reference implementation of `React::ServerRendering::Concern::Instrumentation`
+
+| Project                 |  React::Rails::BenchmarkRenderer    |
+|------------------------ | ----------------- |
+| gem name                |  react-rails-benchmark_renderer   |
+| license                 |  MIT              |
+| expert support          |  [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/peterboling?utm_source=github&utm_medium=button&utm_term=peterboling&utm_campaign=github) |
+| download rank               |  [![Total Downloads](https://img.shields.io/gem/rt/react-rails-benchmark_renderer.svg)](https://rubygems.org/gems/react-rails-benchmark_renderer) |
+| version                 |  [![Gem Version](https://badge.fury.io/rb/react-rails-benchmark_renderer.png)](http://badge.fury.io/rb/react-rails-benchmark_renderer) |
+| dependencies            |  [![Dependency Status](https://gemnasium.com/pboling/react-rails-benchmark_renderer.png)](https://gemnasium.com/pboling/react-rails-benchmark_renderer) |
+| code quality            |  [![Code Climate](https://codeclimate.com/github/pboling/react-rails-benchmark_renderer.png)](https://codeclimate.com/github/pboling/react-rails-benchmark_renderer) |
+| inline documenation     |  [![Inline docs](http://inch-ci.org/github/pboling/react-rails-benchmark_renderer.png)](http://inch-ci.org/github/pboling/react-rails-benchmark_renderer) |
+| continuous integration  |  [![Build Status](https://secure.travis-ci.org/pboling/react-rails-benchmark_renderer.png?branch=master)](https://travis-ci.org/pboling/react-rails-benchmark_renderer) |
+| test coverage           |  [![Coverage Status](https://coveralls.io/repos/pboling/react-rails-benchmark_renderer/badge.png)](https://coveralls.io/r/pboling/react-rails-benchmark_renderer) |
+| homepage                |  [on Github.com][homepage] |
+| documentation           |  [on Rdoc.info][documentation] |
+| live chat               |  [![Join the chat at https://gitter.im/pboling/react-rails-benchmark_renderer](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pboling/react-rails-benchmark_renderer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
+| Spread ~♡ⓛⓞⓥⓔ♡~      |  [on Coderbits][coderbits], [on Coderwall][coderwall] |
+
+[semver]: http://semver.org/
+[pvc]: http://docs.rubygems.org/read/chapter/16#page74
+[railsbling]: http://www.railsbling.com
+[peterboling]: http://www.peterboling.com
+[coderbits]: https://coderbits.com/pboling
+[coderwall]: http://coderwall.com/pboling
+[documentation]: http://rdoc.info/github/pboling/react-rails-benchmark_renderer/frames
+[homepage]: https://github.com/pboling/react-rails-benchmark_renderer
+
+
+This idea started with [a PR I sent](https://github.com/reactjs/react-rails/pull/101/files) to [actual react-rails](https://github.com/reactjs/react-rails) before it hit 1.0 release.  I didn't have time to finish it then, and the structure of the react-rails codebase has changed considerably in latest master, so it is now 
+quite easy to write a renderer as a plugin.  Rewriting it as a modular plugin also allowed me to
+  * Not be beholden to the Apache 2 license on react-rails
+  * Not be beholden to the Facebook CLA
+  * Own the code myself!
+  * Kudos to Facebook for making react-rails more modular so I could easily write this plugin!
 
 ## Installation
 
